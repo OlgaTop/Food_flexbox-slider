@@ -635,19 +635,27 @@ body {
   font-size: 96px;
   line-height: 80px;
   color: #74073b;
-  margin-top: 220px;
-  margin-bottom: 33px;
+  margin: 220px 0 33px 10px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-direction: alternate;
 }
 .hi__subtitle {
   font-family: Lato;
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 50px;
+  margin-left: 10px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
 }
 .hi__btn {
   background-color: #74073b;
   border-radius: 100px;
   padding: 15px 50px;
+  margin-left: 10px;
   color: #fff;
   font-weight: bold;
   font-size: 14px;
@@ -655,7 +663,26 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: 1s;
+  animation-direction: alternate;
 }
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 300%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 2%;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
 .hi__btn:active,
 .hi__btn:hover {
   border: #74073b solid 2px;
@@ -799,6 +826,69 @@ body {
 }
 .section__text p {
   margin-bottom: 30px;
+}
+
+
+.colorOne {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.colorTwo {
+    background-color: #FFF;
+    color: #424141;
+}
+
+#mainContent {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+#mainContent p {
+    padding: 20px;
+
+}
+
+#mainContent #firstBox {
+    font-weight: bold;
+    transform: translate3d(-130px, 0, 0);
+    transition: all 1s ease-out;
+    opacity: 0;
+    max-width: 90%;
+}
+
+#mainContent #firstBox.active {
+    background-color: rgb(104, 104, 104);
+    color: #FFF;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+#mainContent #secondBox {
+    transition: all 1s ease-in-out;
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+    max-width: 90%;
+}
+
+#mainContent #secondBox.active {
+    background-color: rgb(104, 104, 104);
+    color: #FFF;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+#mainContent ol li {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    transition: all 1s ease-in-out;
+    transform: translate3d(120px, 0, 0);
+    opacity: 0;
+}
+
+#mainContent ol li.active {
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
 }
 
 .section__img__rating {
