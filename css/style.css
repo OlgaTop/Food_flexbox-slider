@@ -803,30 +803,37 @@ body {
 }
 
 .section__row {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .section__body {
-  padding-right: 30px;
+    padding-right: 30px;
 }
+
 .section__title {
-  margin: 50px 0 35px 0;
+    margin: 50px 0 35px 0;
 }
+
 .section__list p {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
+
 .section__list li {
-  background: url("../img/Ellipse.svg") left no-repeat;
-  font-size: 14px;
-  line-height: 20px;
-  color: #424141;
-  padding: 0 0 0 37px;
-  margin-bottom: 17px;
-  list-style-type: none;
+    background: url("../img/Ellipse.svg") left no-repeat;
+    font-size: 14px;
+    line-height: 20px;
+    color: #424141;
+    padding: 0 0 0 37px;
+    margin-bottom: 17px;
+    list-style-type: none;
 }
+
 .section__text p {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
+
 
 
 .colorOne {
@@ -891,39 +898,46 @@ body {
     opacity: 1;
 }
 
+
+
 .section__img__rating {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
+
 .section__img__rating:hover {
-  transform: scale(1.3);
+    transform: scale(1.3);
 }
+
 .section__body__rating {
-  font-size: 14px;
-  line-height: 20px;
-  color: #424141;
-  padding: 10px 30px;
-  transition: background-color 0.3s ease;
+    font-size: 14px;
+    line-height: 20px;
+    color: #424141;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
 }
+
 .section__text:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #000;
-  transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    transition: background-color 0.3s ease;
 }
 
 .rating {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #000;
-  padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    padding-bottom: 50px;
 }
+
 .rating-date {
-  padding-right: 50px;
+    padding-right: 50px;
 }
+
 
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
